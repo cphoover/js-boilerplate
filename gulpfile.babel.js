@@ -1,15 +1,15 @@
-const path = require('path');
-const gulp = require('gulp');
-const gulpif = require('gulp-if');
-const babel = require('gulp-babel');
-const istanbul = require('gulp-babel-istanbul');
-const lintspaces = require('gulp-lintspaces');
-const eslint = require('gulp-eslint');
-const mocha = require('gulp-mocha');
-const _ = require('lodash');
+import path from 'path';
+import gulp from 'gulp';
+import gulpif from 'gulp-if';
+import babel from 'gulp-babel';
+import istanbul from 'gulp-babel-istanbul';
+import lintspaces from 'gulp-lintspaces';
+import eslint from 'gulp-eslint';
+import mocha from 'gulp-mocha';
+import _ from 'lodash';
 
-const lintspacesrc = require('linting/lintspaces');
-const spacesindentrc = require('linting/spaceindent');
+import lintspacesrc from 'linting/lintspaces';
+import spacesindentrc from 'linting/spaceindent';
 
 const eslintConfigFile = path.join(__dirname, 'node_modules', 'linting', '.eslintrc.json');
 
